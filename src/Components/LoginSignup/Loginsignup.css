@@ -1,0 +1,140 @@
+/* Wrapper */
+.wrapper{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+    background: #6119196b;
+    border-radius: 10px;
+    color: whitesmoke;
+    color-scheme: dark;
+    text-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    transition: height .18s ease;
+    overflow: hidden;
+}
+.wrapper.action{
+    height: 400px;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 10px 20px 20px 20px;
+}
+.wrapper .form-box.login{
+    transition: translate .18s ease;
+    translate: 0 ;
+}
+.wrapper.action .form-box.login{
+    translate: 0 -400px;
+}
+
+.wrapper .form-box.signup{
+    position: absolute;
+    translate: 0 -400px;
+}
+.wrapper.action .form-box.signup{
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+
+/*Form*/
+form h1{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+
+}
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.233);
+    border-radius: 40px;
+}
+
+
+
+/*Input*/
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #611919;
+    border-radius: 40px;
+    font-size: 15px;
+    color: maroon;
+    padding: 10px 50px 10px 10px;
+}
+.input-box input::placeholder{
+    color: rgb(0, 0, 0);
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 18px;
+}
+
+/* Remember and Forgot */
+form .Random{
+    color: black;
+    font-size: 15px;
+}
+form .remember-forgot{
+    display:flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color: rgba(59, 57, 57, 0.233);
+    margin-right: 4px;
+    cursor: pointer;
+}
+.remember-forgot a{
+    color: rgb(59, 19, 19);
+    text-decoration: None;
+}
+.remember-forgot a:hover{
+    color: rgb(255, 158, 158);
+    text-decoration: None;
+}
+
+/* Buttons */
+form button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: 750;
+}
+form button:hover{
+    background: #e4e4e4;
+}
+
+form .signup-link{
+    text-align: center;
+    margin: 10px 0 15px;
+    font-size: 15px;
+}
+.signup-link p a{
+    color: rgb(59, 19, 19);
+    text-decoration: None;
+}
+.signup-link p a:hover{
+    color: rgb(255, 158, 158);
+    text-decoration: None;
+}
+
+

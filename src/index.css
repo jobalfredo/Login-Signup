@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+/* Backgrounds */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f0f0f0),
+    to(#381c1c));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
